@@ -1,7 +1,7 @@
 export default function getListStudentIds(objs) {
   let result = [];
 
-  if (objs.constructor === Array) {
+  if (Array.isArray(objs)) {
     result = objs.map((element) => element.id);
   }
 
